@@ -1,11 +1,13 @@
 package internal
 
 import (
-	"/github.com/go-tron/baseError"
-	"/github.com/go-tron/config"
-	"/github.com/go-tron/mapUtil"
 	"context"
 	"fmt"
+	"github.com/go-resty/resty/v2"
+	"github.com/go-tron/base-error"
+	"github.com/go-tron/config"
+	"github.com/go-tron/types/mapUtil"
+	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/opentracing/opentracing-go/log"
 	"github.com/tidwall/gjson"
